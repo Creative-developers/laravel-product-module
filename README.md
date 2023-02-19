@@ -64,3 +64,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Starting Project Steps
+
+1) Run php artisan migrate to migrate all of the migrations to your db
+2) Run db:seed to import the products and user data
+3) Run php artisan serve to run the projct
+
+## API EndPoints
+1) http://localhost:8000/api/products to get all of the products
+2) http://localhost:8000/api/products?name={name}&user={user} to filter the products either by product name or by user name who has created the product
+3) http://localhost:8000/api/products/{product_id} to get the product by id
+4) http://localhost:8000/api/products/{product_id} update product by id
+5) http://localhost:8000/api/products create the product
+6) http://localhost:8000/api/products/{product_id} delete the product by id
+
